@@ -1,7 +1,5 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap");
-@import "tailwindcss";
-
 
 @theme {
   --font-sora: "Sora", sans-serif;
@@ -11,4 +9,59 @@
   --color-light: #ffffff;
   --color-green: #0b5d1e;
   --color-muted: #666666;
+}
+
+@layer components {
+  .hero-bg {
+    background-image: url(../images/hero-bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .layer-background {
+    position: relative;
+  }
+
+  .layer-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/hero-bg1.png);
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .layer-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/hero-bg2.png);
+    /* background-size: cover; */
+    opacity: 0.1;
+    z-index: 2;
+  }
+
+  .layer-background > * {
+    position: relative;
+    z-index: 3;
+  }
+
+  .multi-background {
+    position: relative;
+  }
+
+  .multi-background::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    border-radius: 100% 0 0 0;
+    opacity: 1;
+  }
+  .multi-background > * {
+    position: relative;
+    z-index: 3;
+  }
 }

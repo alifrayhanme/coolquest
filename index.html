@@ -4,8 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
+  <title>coolquest</title>
 </head>
+
 <body>
-    <h1 class="bg-green text-light text-center">Project setup complete</h1>
+  <!-- hero section -->
+  <section class="sm:px-10 px-5 py-5 layer-background">
+    <header class="flex justify-between items-center bg-light rounded-full shadow p-2 xl:mb-10">
+      <!-- brand logo -->
+      <a href="/">
+        <img src="./images/logo.svg" alt="coolquest brand logo">
+      </a>
+      <ul class="sm:flex hidden gap-2 text-dark font-manrope">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Past Work</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+      <button type="button" class="bg-green text-light font-manrope rounded-full p-2">Get Free Quote</button>
+    </header>
+    <main class="">
+      <div class="grid grid-cols-1 lg:grid-cols-2 py-10 gap-10 space-y-10">
+        <div class="space-y-10">
+          <h1 class="sm:text-6xl text-4xl text-light font-manrope">Reliable HVAC for Every Season</h1>
+          <ul class="font-sora space-y-2 text-light">
+            <li class="flex items-start gap-2">
+              <img src="./images/certified.svg" alt="" class="w-5 h-5 mt-1">
+              <span>Certified & Experienced Technicians</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <img src="./images/reliable.svg" alt="" class="w-5 h-5 mt-1">
+              <span>Fast, Reliable Service</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <img src="./images/hot-price.svg" alt="" class="w-5 h-5 mt-1">
+              <span>Transparent, Affordable Pricing</span>
+            </li>
+          </ul>
+          <div class="bg-light p-4">
+            <div class="grid grid-cols-2 gap-4">
+              <input class="border-2 border-green rounded-sm outline-none p-2 col-span-1" type="text"
+                placeholder="Name">
+              <input class="border-2 border-green rounded-sm outline-none p-2 col-span-1" type="text"
+                placeholder="Phone">
+
+              <select class="border-2 border-green rounded-sm outline-none p-2 col-span-1">
+                <option value="" selected disabled>Select a service</option>
+                <option value="technology">Technology</option>
+                <option value="transport">Transport</option>
+              </select>
+
+              <button class="bg-green rounded-sm text-light p-2 border-none outline-none col-span-1"
+                type="submit">Submit</button>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <p class="text-light font-sora">Certified Installer</p>
+            <div class="flex gap-2">
+              <a href="#"><img class="h-5 w-auto" src="./images/gaf-logo.svg" alt="gaf-logo"></a>
+              <a href="#"><img class="h-5 w-auto" src="./images/lennox.svg" alt="lennox"></a>
+              <a href="#"><img class="h-5 w-auto" src="./images/standart.svg" alt="american standart"></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="multi-background  flex justify-center items-center mb-2">
+            <div class="w-100 h-auto">
+              <img src="./images/hero model.png" alt="hero model">
+            </div>
+            
+            <div class="bg-light shadow absolute sm:top-5 top-3 sm:right-5 right-2 sm:w-32 w-24 rounded-xl">
+              <div class="flex justify-center items-center"><img src="./images/shield-gard.svg" alt="shield-gard"></div>
+              <p class="text-center">C20-987654</p>
+            </div>
+
+            <div class="bg-light rounded-full absolute top-0 left-0 w-24 sm:w-36 xl:w-48  h-24 sm:h-36 xl:h-48">
+              <img src="./images/warranty.png" alt="warranty">
+            </div>
+            <div class="bg-light shadow absolute sm:bottom-5 bottom-1 sm:left-7 left-1 sm:w-24 w-20 rounded-xl space-y-2">
+              <div class="flex justify-center items-center h-2 sm:h-auto"><img src="./images/google.svg" alt="shield-gard"></div>
+              <p class="text-center">4.8 <span class="text-muted">(698)</span></p>
+            </div>
+
+          </div>
+          <div class="flex gap-2">
+            <div class="relative">
+              <div class="">
+                <img src="./images/check-details.jpg" alt="check-details">
+              </div>
+              <p class="text-light bg-green absolute bottom-0 right-0 cursor-pointer">View Details</p>
+            </div>
+            <div class="relative">
+              <div>
+                <img src="./images/check-details2.jpg" alt="check-details1">
+              </div>
+              <p class="text-light bg-green absolute bottom-0 right-0 cursor-pointer">View Details</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <!-- hero section -->
 </body>
+
 </html>
